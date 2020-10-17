@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>达令说</title>
-    <link rel="stylesheet" href="css/public.min.css">
     <link rel="stylesheet" href="css/index.min.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
+
 <body>
     <!-- header -->
     <header>
@@ -44,7 +46,7 @@
             <div class="ss">
                 <div class="ssk">
                     <form name="search" action="#" target="_blank">
-                        <input class="mod_search_srk" type="text" placeholder="请输入商品进行搜索" value = '连衣裙'>
+                        <input class="mod_search_srk" type="text" placeholder="请输入商品进行搜索" value='连衣裙'>
                         <input class="mod_search_btn" type="submit" value="搜索">
                     </form>
                 </div>
@@ -58,118 +60,649 @@
                         <span class="mod_cart_num" id="cart_total">0</span>
                         <b class="mod_cart_arrow"><i></i></b>
                     </div>
-                </div>                       
+                </div>
                 <div class="mod_lxie">
-                    <a href="#" target = "_blank">凉鞋</a> 
-                    <a href="#" target = "_blank">T恤</a> 
-                    <a href="#" target = "_blank">女包</a>
-                    <a href="#" target = "_blank">衬衫</a>
-                    <a href="#" target = "_blank">爆款</a>
+                    <a href="#" target="_blank">凉鞋</a>
+                    <a href="#" target="_blank">T恤</a>
+                    <a href="#" target="_blank">女包</a>
+                    <a href="#" target="_blank">衬衫</a>
+                    <a href="#" target="_blank">爆款</a>
                 </div>
             </div>
         </div>
     </div>
+    <!-- nav -->
     <div class="nav">
         <div class="dl_index">
-          <ul>
-            <li class = "flei"><a href="/" target="_self">首页</a></li>
-            <li class = "flei tbfl"><a href="#">淘宝返利</a></li>
-            <li class = "flei"><a href="#">热卖</a></li>
-            <li class = "flei"><a href="#">女装</a></li>
-            <li class = "flei"><a href="#">女鞋</a></li>
-            <li class = "flei"><a href="#">女包</a></li>
-            <li class = "flei"><a href="#">配饰</a></li>
-            <li class = "flei"><a href="#">美妆</a></li>
-            <li class = "flei"><a href="#">当季上新</a></li>
-            <li class = "flei"><a href="#">旗舰店</a></li>
-            <li class = "flei"><a href="#">达令周刊</a></li>
-            <li class = "flei"><a href="#">夏季连衣裙</a></li>
-            <li class = "flei"><a href="#">达令特卖</a></li>
-          </ul>
+            <ul>
+                <li class="flei"><a href="/" target="_self">首页</a></li>
+                <li class="flei tbfl"><a href="#">淘宝返利</a></li>
+                <li class="flei"><a href="#">热卖</a></li>
+                <li class="flei"><a href="#">女装</a></li>
+                <li class="flei"><a href="#">女鞋</a></li>
+                <li class="flei"><a href="#">女包</a></li>
+                <li class="flei"><a href="#">配饰</a></li>
+                <li class="flei"><a href="#">美妆</a></li>
+                <li class="flei"><a href="#">当季上新</a></li>
+                <li class="flei"><a href="#">旗舰店</a></li>
+                <li class="flei"><a href="#">达令周刊</a></li>
+                <li class="flei"><a href="#">夏季连衣裙</a></li>
+                <li class="flei"><a href="#">达令特卖</a></li>
+            </ul>
         </div>
     </div>
     <!-- bar -->
     <div class="bar">
         <div class="bar_div">
-            <ul class="bar_tu">
+            <div id="slide" class="slide">
+                <ul class="bar_tu">
                     <li><a href="#" target="_blank"><img src="img/58860b6f9715d.jpg" alt=" 2017流行色" /></a></li>
                     <li><a href="#" target="_blank"><img src="img/58b7fcaa4f74d.jpg" alt="达令说-首页" /></a></li>
                     <li><a href="#" target="_blank"><img src="img/58b7fc01a2a4c.jpg" alt="至简元素旗舰店" /></a></li>
-            </ul>
+                </ul>
+                <div>
+                    <span class="prev_btn">
+                        < </span>
+                            <span class="next_btn"> > </span>
+                </div>
+            </div>
+
+            <div class="cenimg">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/48c983e8d020d3224feed14c0dfc_175_142.jpg" alt="专题榜">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/57f810ef0b66f11831d45aa970f7_175_142.jpg" alt="上新榜">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/815a3e1a1693642b22d136b0dafc_175_142.jpg" alt="热销榜">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/a902a6394d9d838effc49f0cda00_175_142.jpg" alt="流行榜">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="rigbox"></div>
         </div>
         <div class="lou">
-            <div class = "nav_hot">
-                <h2><a class="red_f tabs" href="#" title = "衣服" target="_blank">衣服</a></h2>
-                <p>                  
-                   <a class=" red_f tabs" href="#" target="_blank">外套</a>                  
-                   <a class=" tabs" href="#" target="_blank">卫衣</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">风衣</a>                  
-                   <a class=" tabs" href="#" target="_blank">牛仔外套</a>                  
-                   <a class=" red_f tabs" href="#"  target="_blank">西装</a>                  
-                   <a class=" tabs" href="#"  target="_blank">衬衫</a>                  
-                   <a class=" red_f tabs" href="#"  target="_blank">打底衫</a>                  
-                   <a class=" tabs" href="#" target="_blank">套装</a>                  
+            <div class="nav_hot">
+                <h2><a class="red_f tabs" href="#" title="衣服" target="_blank">衣服</a></h2>
+                <p>
+                    <a class=" red_f tabs" href="#" target="_blank">外套</a>
+                    <a class=" tabs" href="#" target="_blank">卫衣</a>
+                    <a class=" red_f tabs" href="#" target="_blank">风衣</a>
+                    <a class=" tabs" href="#" target="_blank">牛仔外套</a>
+                    <a class=" red_f tabs" href="#" target="_blank">西装</a>
+                    <a class=" tabs" href="#" target="_blank">衬衫</a>
+                    <a class=" red_f tabs" href="#" target="_blank">打底衫</a>
+                    <a class=" tabs" href="#" target="_blank">套装</a>
                 </p>
+                <span class="nav_sanji">
+                    <p class="louceng">1&nbsp;楼 &nbsp;衣服商城</p>
+                    <P>
+                        <a class=" red_f tabs" href="#" target="_blank">外套</a>
+                        <a class=" tabs" href="#" target="_blank">卫衣</a>
+                        <a class=" red_f tabs" href="#" target="_blank">风衣</a>
+                        <a class=" tabs" href="#" target="_blank">牛仔外套</a>
+                        <a class=" red_f tabs" href="#" target="_blank">西装</a>
+                        <a class=" tabs" href="#" target="_blank">衬衫</a>
+                        <a class=" red_f tabs" href="#" target="_blank">打底衫</a>
+                        <a class=" tabs" href="#" target="_blank">套装</a>
+                        <a class=" red_f tabs" href="#" target="_blank">针织衫</a>
+                        <a class=" tabs" href="#" target="_blank">T恤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">连衣裙</a>
+                        <a class=" tabs" href="#" target="_blank">A字裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">背心裙</a>
+                        <a class=" tabs" href="#" target="_blank">短裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">长袖连衣裙</a>
+                        <a class=" tabs" href="#" target="_blank">皮裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">伞裙</a>
+                        <a class=" tabs" href="#" target="_blank">百褶裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">半身裙</a>
+                        <a class=" tabs" href="#" target="_blank">长裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">短裤</a>
+                        <a class=" tabs" href="#" target="_blank">牛仔裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">休闲裤</a>
+                        <a class=" tabs" href="#" target="_blank">运动裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">长裤</a>
+                        <a class=" tabs" href="#" target="_blank">九分裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">小脚裤</a>
+                        <a class=" tabs" href="#" target="_blank">哈伦裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">西装裤</a>
+                        <a class=" tabs" href="#" target="_blank">背带裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">文胸</a>
+                        <a class=" tabs" href="#" target="_blank">内裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">睡衣</a>
+                        <a class=" tabs" href="#" target="_blank">家具服</a>
+                        <a class=" red_f tabs" href="#" target="_blank">泳衣</a>
+                    </p>
+                </span>
             </div>
-            <div class = "nav_hot">
-                <h2><a class="red_f tabs" href="#" title = "鞋子" target="_blank">鞋子</a></h2>
-                <p>                  
-                   <a class=" red_f tabs" href="#" target="_blank">拖鞋</a>                  
-                   <a class=" tabs" href="#"  target="_blank">休闲鞋</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">平底鞋</a>                  
-                   <a class=" tabs" href="#" target="_blank">高跟鞋</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">坡跟鞋</a>                  
-                   <a class=" tabs" href="#" target="_blank">真皮鞋</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">豆豆鞋</a>                  
-                   <a class=" tabs" href="#" target="_blank">帆布鞋</a>                  
+            <div class="nav_hot">
+                <h2><a class="red_f tabs xiezi" href="#" title="鞋子" target="_blank">鞋子</a></h2>
+                <p>
+                    <a class=" red_f tabs" href="#" target="_blank">拖鞋</a>
+                    <a class=" tabs" href="#" target="_blank">休闲鞋</a>
+                    <a class=" red_f tabs" href="#" target="_blank">平底鞋</a>
+                    <a class=" tabs" href="#" target="_blank">高跟鞋</a>
+                    <a class=" red_f tabs" href="#" target="_blank">坡跟鞋</a>
+                    <a class=" tabs" href="#" target="_blank">真皮鞋</a>
+                    <a class=" red_f tabs" href="#" target="_blank">豆豆鞋</a>
+                    <a class=" tabs" href="#" target="_blank">帆布鞋</a>
                 </p>
+                <span class="nav_sanji">
+                    <p class="louceng">2&nbsp;楼 &nbsp;鞋子商城</p>
+                    <P>
+                        <a class=" red_f tabs" href="#" target="_blank">拖鞋</a>
+                        <a class=" tabs" href="#" target="_blank">休闲鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">平底鞋</a>
+                        <a class=" tabs" href="#" target="_blank">高跟鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">坡跟鞋</a>
+                        <a class=" tabs" href="#" target="_blank">真皮鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">豆豆鞋</a>
+                        <a class=" tabs" href="#" target="_blank">帆布鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">松糕鞋</a>
+                        <a class=" tabs" href="#" target="_blank">运动鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">高帮鞋</a>
+                        <a class=" tabs" href="#" target="_blank">板鞋</a>
+                        <a class=" red_f tabs" href="#" target="_blank">内增高</a>
+                        <a class=" tabs" href="#" target="_blank">凉鞋</a>
+                    </p>
+                </span>
             </div>
-            <div class = "nav_hot">
-                <h2><a class="red_f tabs" href="#" title = "包包" target="_blank">包包</a></h2>
-                <p>                  
-                   <a class=" red_f tabs" href="#" target="_blank">单肩包</a>                  
-                   <a class=" tabs" href="#" target="_blank">双肩包</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">大包</a>                  
-                   <a class=" tabs" href="#" target="_blank">斜挎包</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">水桶包</a>                  
-                   <a class=" tabs" href="#" target="_blank">钱包</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">手拿包</a>                  
-                   <a class=" tabs" href="#" target="_blank">迷你包</a>                  
+            <div class="nav_hot">
+                <h2><a class="red_f tabs" href="#" title="包包" target="_blank">包包</a></h2>
+                <p>
+                    <a class=" red_f tabs" href="#" target="_blank">单肩包</a>
+                    <a class=" tabs" href="#" target="_blank">双肩包</a>
+                    <a class=" red_f tabs" href="#" target="_blank">大包</a>
+                    <a class=" tabs" href="#" target="_blank">斜挎包</a>
+                    <a class=" red_f tabs" href="#" target="_blank">水桶包</a>
+                    <a class=" tabs" href="#" target="_blank">钱包</a>
+                    <a class=" red_f tabs" href="#" target="_blank">手拿包</a>
+                    <a class=" tabs" href="#" target="_blank">迷你包</a>
                 </p>
+                <span class="nav_sanji">
+                    <p class="louceng">3&nbsp;楼 &nbsp;包包商城</p>
+                    <P>
+                        <a class=" red_f tabs" href="#" target="_blank">单肩包</a>
+                        <a class=" tabs" href="#" target="_blank">双肩包</a>
+                        <a class=" red_f tabs" href="#" target="_blank">大包</a>
+                        <a class=" tabs" href="#" target="_blank">斜挎包</a>
+                        <a class=" red_f tabs" href="#" target="_blank">水桶包</a>
+                        <a class=" tabs" href="#" target="_blank">钱包</a>
+                        <a class=" red_f tabs" href="#" target="_blank">手拿包</a>
+                        <a class=" tabs" href="#" target="_blank">迷你包</a>
+                        <a class=" red_f tabs" href="#" target="_blank">邮差包</a>
+                        <a class=" tabs" href="#" target="_blank">手提包</a>
+                        <a class=" red_f tabs" href="#" target="_blank">磨砂皮</a>
+                        <a class=" tabs" href="#" target="_blank">帆布真皮</a>
+                        <a class=" red_f tabs" href="#" target="_blank">PU皮</a>
+                        <a class=" tabs" href="#" target="_blank">漆皮</a>
+                        <a class=" red_f tabs" href="#" target="_blank">毛绒系</a>
+                    </p>
+                </span>
             </div>
-            <div class = "nav_hot">
-                <h2><a class="red_f tabs" href="#" title = "包包" target="_blank">美妆</a></h2>
-                <p>                  
-                   <a class=" red_f tabs" href="#" target="_blank">卸妆</a>                  
-                   <a class=" tabs" href="#" target="_blank">洁面</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">爽肤水</a>                  
-                   <a class=" tabs" href="#" target="_blank">面霜</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">面膜</a>                  
-                   <a class=" tabs" href="#" target="_blank">眼霜</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">乳液</a>                  
-                   <a class=" tabs" href="#" target="_blank">精油</a>                  
+            <div class="nav_hot">
+                <h2><a class="red_f tabs" href="#" title="包包" target="_blank">美妆</a></h2>
+                <p>
+                    <a class=" red_f tabs" href="#" target="_blank">卸妆</a>
+                    <a class=" tabs" href="#" target="_blank">洁面</a>
+                    <a class=" red_f tabs" href="#" target="_blank">爽肤水</a>
+                    <a class=" tabs" href="#" target="_blank">面霜</a>
+                    <a class=" red_f tabs" href="#" target="_blank">面膜</a>
+                    <a class=" tabs" href="#" target="_blank">眼霜</a>
+                    <a class=" red_f tabs" href="#" target="_blank">乳液</a>
+                    <a class=" tabs" href="#" target="_blank">精油</a>
                 </p>
+                <span class="nav_sanji">
+                    <p class="louceng">4&nbsp;楼 &nbsp;美妆商城</p>
+                    <P>
+                        <a class=" red_f tabs" href="#" target="_blank">外套</a>
+                        <a class=" tabs" href="#" target="_blank">卫衣</a>
+                        <a class=" red_f tabs" href="#" target="_blank">风衣</a>
+                        <a class=" tabs" href="#" target="_blank">牛仔外套</a>
+                        <a class=" red_f tabs" href="#" target="_blank">西装</a>
+                        <a class=" tabs" href="#" target="_blank">衬衫</a>
+                        <a class=" red_f tabs" href="#" target="_blank">打底衫</a>
+                        <a class=" tabs" href="#" target="_blank">套装</a>
+                        <a class=" tabs" href="#" target="_blank">皮裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">伞裙</a>
+                        <a class=" tabs" href="#" target="_blank">百褶裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">半身裙</a>
+                        <a class=" tabs" href="#" target="_blank">长裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">短裤</a>
+                        <a class=" tabs" href="#" target="_blank">牛仔裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">休闲裤</a>
+                        <a class=" tabs" href="#" target="_blank">运动裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">长裤</a>
+                        <a class=" tabs" href="#" target="_blank">九分裤</a>
+                    </p>
+                </span>
             </div>
-            <div class = "nav_hot">
-                <h2><a class="red_f tabs" href="#" title = "包包" target="_blank">配饰</a></h2>
-                <p>                  
-                   <a class=" red_f tabs" href="#" target="_blank">项链</a>                  
-                   <a class=" tabs" href="#" target="_blank">手链</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">耳环</a>                  
-                   <a class=" tabs" href="#" target="_blank">戒指</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">帽子</a>                  
-                   <a class=" tabs" href="#" target="_blank">袜子</a>                  
-                   <a class=" red_f tabs" href="#" target="_blank">连裤袜</a>                                   
+            <div class="nav_hot">
+                <h2><a class="red_f tabs" href="#" title="包包" target="_blank">配饰</a></h2>
+                <p>
+                    <a class=" red_f tabs" href="#" target="_blank">项链</a>
+                    <a class=" tabs" href="#" target="_blank">手链</a>
+                    <a class=" red_f tabs" href="#" target="_blank">耳环</a>
+                    <a class=" tabs" href="#" target="_blank">戒指</a>
+                    <a class=" red_f tabs" href="#" target="_blank">帽子</a>
+                    <a class=" tabs" href="#" target="_blank">袜子</a>
+                    <a class=" red_f tabs" href="#" target="_blank">连裤袜</a>
                 </p>
+                <span class="nav_sanji">
+                    <p class="louceng">5&nbsp;楼 &nbsp;配饰商城</p>
+                    <P>
+                        <a class=" red_f tabs" href="#" target="_blank">项链</a>
+                        <a class=" tabs" href="#" target="_blank">短裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">长袖连衣裙</a>
+                        <a class=" tabs" href="#" target="_blank">皮裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">伞裙</a>
+                        <a class=" tabs" href="#" target="_blank">百褶裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">半身裙</a>
+                        <a class=" red_f tabs" href="#" target="_blank">文胸</a>
+                        <a class=" tabs" href="#" target="_blank">内裤</a>
+                        <a class=" red_f tabs" href="#" target="_blank">睡衣</a>
+                        <a class=" tabs" href="#" target="_blank">家具服</a>
+                        <a class=" red_f tabs" href="#" target="_blank">泳衣</a>
+                    </p>
+                </span>
             </div>
-            <div class = "nav_hot_ss">
-                <form name="search" action="#" target="_blank">
-                    <input class="mod_search_srk" type="text" placeholder="找其他关键词">
-                    <input class="mod_search_btn" type="submit" value="搜索">
-                </form>
+            <div class="nav_hot_ss">
+                <div class="nav_hot_ssk">
+                    <form name="search" action="#" target="_blank">
+                        <input class="mod_search_srk" type="text" placeholder="找其他关键词">
+                        <input class="mod_search_btn" type="submit" value="搜索">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+    <!-- kby -->
+    <div class="s">
+        <div class="kby">
+            <div class="kb1"></div>
+            <div class="kb2"><a href="#">女装，女鞋，个性女装，女性服饰</a></div>
+            <div class="kb3"></div>
+        </div>
+    </div>
+    <div class="today">
+        <div class="today_bt">
+            <h1>今日必备单品</h1>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">pu皮裙百搭2017秋季a字裙半身裙高腰不规则A字裙包臀裙一步</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
     
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2017新款百搭小皮裙半身裙短裙新款显瘦黑色a字PU包臀高腰女</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">春夏职业工作鞋单鞋浅口细跟真皮高跟鞋尖头黑色牛皮大码女鞋</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮鞋</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2016春夏季厚底内增高6CM纯色帆布鞋女式白色松糕运动韩版潮大码。</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>帆布鞋</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2016春季欧美真皮厚底女单鞋圆头跑步运动休闲懒人鞋乐福平底</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>运动鞋</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2016春夏新款韩版蛇纹宴会女包单肩链条信封手拿包女大容量手</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>单肩包</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">范范同款高品质版2016新款进口帆布笑脸包囧包蝙蝠包白色手提</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>手提包</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">女包2016欧美新款斜挎包恶搞迷你铂金包手提链条包单肩斜跨小</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>手提包</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2016夏季真皮休闲百搭凉鞋中跟凉鞋厚底学生鞋平底防滑坡跟女</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>坡跟鞋</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">春夏中老年妈妈凉鞋平底防滑女鞋拼色孕妇凉鞋大码平跟老人鞋</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>凉鞋</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2018春秋新款PU皮裙荷叶半身裙子高腰A字伞裙拼接大摆长裙</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">百褶皮裙半身裙细高腰风琴春春夏女胖mm大码a字小黑色短裙P</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2018春秋新款PU皮裙半身裙百搭裤裙修身蓬蓬裙A字裙高腰小</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">PU皮裙半身裙2018秋冬新款修身显瘦包臀裙百搭高腰黑色短裙</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>皮裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        <div class="groupbox">
+            <div class="groupCon">
+                <a class="picBox" href="#" target="_blank">
+                    <img src="img/bg200.jpg" width="200" height="230"
+                        alt="达令说-2016春夏季厚底内增高6CM纯色帆布鞋" />
+                </a>
+                <p class="g_tle">
+                    <a href="/prom/item/29952.html" target="_blank">2017新韩版黑色秋冬新款高腰pu皮裙百搭女包臀裙显瘦A字裙半</a>
+                </p>
+                <div class="gc_title">
+                    <div>
+                        <a href="/prom/item/29952.html" class="like_it" target="_blank"></a>
+                        <i></i>
+                    </div>
+                    <span>
+                        <a href="/category/shoes/3/1.html" target="_blank"
+                            style="background:none; color:#999"><strong>包臀裙</strong></a>
+                    </span>
+                </div>
+                <div class="clear_f">
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/index.min.js"></script>
 </body>
+
 </html>

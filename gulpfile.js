@@ -33,7 +33,7 @@ const sass = require('gulp-sass');
                     presets: ['@babel/env']
                 }))
                 .pipe(concat('index.js'))
-                .pipe(uglify())
+                // .pipe(uglify())
                 .pipe(rename({suffix : '.min'}))
                 .pipe(gulp.dest('./dist/js'));
             }
