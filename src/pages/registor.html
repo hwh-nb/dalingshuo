@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="../css/registor.min.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <p>达令,欢迎您！</p>
+            <div class="header-right">
+                <a href="">微博登陆&nbsp;</a>
+                <em class="tb"></em>
+                <li>|</li>
+                <a href="">QQ登陆&nbsp;</a>
+                <em class="tb tb1"></em>
+                <li>|</li>
+                <a href="">登陆</a>
+                <li>|</li>
+                <a href="">注册</a>
+                <li>|</li>
+                <a href="">我的订单</a>
+                <li>|</li>
+                <a href="">手机达令</a>
+                <li>|</li>
+                <a href="">达令音乐</a>
+                <li>|</li>
+                <a href="">加入收藏</a>
+            </div>
+        </div>
+    </header>
+    <!-- er -->
+    <div class="er">
+        <div class="logo">
+            <a href="#"><img src="../img/logo.png" alt="logo"></a>
+            <div class="mod_ad">
+                <p>本周<b>爱淘宝</b>推荐</p>
+                <a href="#">天猫超人气女装旗舰店——韩都衣舍</a>
+            </div>
+            <div class="ss">
+                <div class="ssk">
+                    <form name="search" action="#" target="_blank">
+                        <input class="mod_search_srk" type="text" placeholder="请输入商品进行搜索" value='连衣裙'>
+                        <input class="mod_search_btn" type="submit" value="搜索">
+                    </form>
+                </div>
+                <div class="mod_cart">
+                    <div class="mod_cart_con">
+                        <a href="#" target="_blank" class="mod_cart_lk">
+                            <i class="mod_cart_ico">&nbsp;</i>
+                            <span class="mod_cart_tit">购物车</span>
+                        </a>
+                        <div class="mod_cart_line">|</div>
+                        <span class="mod_cart_num" id="cart_total">0</span>
+                        <b class="mod_cart_arrow"><i></i></b>
+                    </div>
+                </div>
+                <div class="mod_lxie">
+                    <a href="#" target="_blank">凉鞋</a>
+                    <a href="#" target="_blank">T恤</a>
+                    <a href="#" target="_blank">女包</a>
+                    <a href="#" target="_blank">衬衫</a>
+                    <a href="#" target="_blank">爆款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- lg_con -->
+    <div class="lg_con">
+        <div class="lg_left">
+            <h1>新用户注册</h1>
+            <div class="lg_form">
+                <form id="myform" action="" method="post">
+                    <div class="lg_name"> 
+                        <span>电子邮箱：</span>
+                        <input type="text" placeholder=" 电子邮箱 " name="name" class="text" id="email" />
+                        <i>邮箱格式有误</i>
+                    </div>
+                    <div class="lg_nickname"> 
+                        <span>昵称：</span>
+                        <input type="text" name="nick" class="text" id="uname" placeholder=" 昵称" />
+                        <i>请输入昵称</i>
+                    </div>
+                    <div class="lg_sex"> 
+                        <span>性别：</span>
+                        <input name="sex" type="radio" value="1" checked="checked"/>
+                        <span class="sex_name"> 男 </span>
+                        <input name="sex" type="radio" value="0" id="sex"/>
+                        <span class="sex_name"> 女 </span> 
+                    </div>
+                    <div class="lg_pass"> 
+                        <span>密码：</span>
+                        <input type="password" id="upwd" value="" name="pass" class="text" placeholder="  密码"/>
+                        <i>请输入密码(长度6位以上)</i>
+                    </div>
+                    <div class="lg_pass_sure"> 
+                        <span>确认密码：</span>
+                        <input type="password" id="upwds" value="" name="repass" class="text" placeholder=" 确认密码" />
+                        <i>请确认密码</i>
+                    </div>
+                    <div class="lg_chk">
+                        <div style="float:left"> 
+                            <span>验证码：</span>
+                            <input type="text" id="yzm" class="text" name="chk" placeholder=" 验证码" />
+                            <span id="yzmsc" style="font-size: 20px; color: red;">1314</span>
+                            <span style="font-size:12px; color:#f69; line-height:30px; cursor:pointer; margin-left:5px; padding-right:10px"
+                            class="new_code">换一张</span>
+                            <i>请输入验证码</i>
+                        </div>
+                    </div>
+                    <div class="err_loged"></div>
+                    <div class="lg_remember">
+                        <label>
+                            <input type="checkbox" value="1" name="sure" id="check" checked />
+                            <span>我已看过并同意
+                                <a href="./agree.html" target="_blank" style="color:#f69; text-decoration:none">
+                                    《网络服务使用协议》
+                                </a>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="lg_login">
+                        <input type="button" class="sub" />
+                        <span id="form_err">填写的信息错误，请检查 !</span> 
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="lg_right">
+            <h2>登陆</h2>
+            <span style="margin-left:40px;">已经有帐号？请直接登录</span>
+            <a style="margin-left:40px;" class="reg" href="login.html"></a>
+            <div class="ot_login"> <span>您也可以用以下方式登录：</span>
+                <div class="ot_btn">
+                    <a class="api" href="#"></a>
+                    <a class="api apii" href="#" class="login_qq"></a>
+                    <a class="api apii" href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tureFoot -->
+    <div class="sss">
+        <div class="tureFoot">
+            <div class="foot_con">
+                <div class="f_list">
+                    <h4>发现美丽</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">挑衣服</a></li>
+                        <li><a href="#" target="_blank">找鞋子</a></li>
+                        <li><a href="#" target="_blank">寻包包</a></li>
+                        <li><a href="#" target="_blank">搭配饰</a></li>
+                        <li><a href="#" target="_blank">化美妆</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">关于达令说</a></li>
+                        <li><a href="#" target="_blank">联系我们</a></li>
+                        <li><a href="#" target="_blank">网站地图</a></li>
+                        <li><a href="#" target="_blank">音乐电台</a></li>
+                        <li><a href="#" target="_blank">达令周刊</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>更多</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">友情链接</a></li>
+                        <li><a href="#" target="_blank">意见反馈</a></li>
+                        <li><a href="#" rel="nofollow" target="_blank">中国天气</a></li>
+                        <li><a href="#" target="_blank">手机达令</a></li>
+                        <li><a href="#" target="_blank">WAP达令</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>关注我们</h4>
+                    <ul class="l_two">
+                        <li><a href="#" target="_blank">达令说的新浪微博</a></li>
+                        <li><a href="#" target="_blank">达令说的QQ空间</a></li>
+                        <li><a href="#" target="_blank" rel="nofollow">爱淘宝网</a></li>
+                        <li>
+                            <a target="_blank" href="#">
+                                <img border="0" src="http://wpa.qq.com/pa?p=2:775164242:51" alt="点击这里给我发消息"
+                                    title="点击这里给我发消息" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <img src="../img/dalingshuo.png" width="100" height="100" alt="二维码，达令说" />
+                    <p>&nbsp;&nbsp;达令说的二维码</p>
+                </div>
+                <div class="rolling">
+                    <h4 class="f_links">友情链接：</h4>
+                    <marquee align="middle" behavior="scroll" direction="up" height="50px" width="700px"
+                        scrollamount="1" scrolldelay="100" onmouseover="stop()" onmouseout="start()">
+                        <ul>
+
+                            <script type='text/javascript'>
+                                document.write("<li><a href='http://lady.qq.com/' target='_blank' rel='nofollow'>腾讯女性</a> <a href='http://www.tmall.com/' target='_blank' rel='nofollow'>天猫</a><a href='http://www.taobao.com/' target='_blank' rel='nofollow'>淘宝</a> <a href='http://ju.taobao.com/' target='_blank' rel='nofollow'>聚划算</a><a href='http://www.pclady.com.cn/' target='_blank' rel='nofollow'>太平洋女性网</a> <a href='http://www.duobaohui.com/' target='_blank' rel='nofollow'>多宝汇</a> <a href='http://www.7y7.com/' target='_blank' rel='nofollow'>七丽女性网</a> <a href='http://www.kuwo.cn/' target='_blank' rel='nofollow'>酷我音乐</a>  <a href='http://www.kongjie.com/' target='_blank' rel='nofollow'>空姐网</a> <a href='http://china.makepolo.com/' target='_blank' rel='nofollow'>马可波罗</a></li><li> <a href='http://www.aibang.com/' target='_blank' rel='nofollow'>爱帮网</a> <a href='http://club.china.alibaba.com/' target='_blank' rel='nofollow'>商人论坛</a> <a href='http://www.51hejia.com/' target='_blank' rel='nofollow'>和家网</a> <a href='http://www.zhubajie.com/' target='_blank' rel='nofollow'>猪八戒网</a> <a href='http://www.letao.com/' target='_blank' rel='nofollow'>乐淘网</a> <a href='http://quan.163.com/' target='_blank' rel='nofollow'>优惠券</a> <a href='http://www.appchina.com/' target='_blank' rel='nofollow'>应用汇</a> <a href='huodong/meizhuang.html' target='_blank' rel='nofollow'>爱美赏</a ></li><li> <a href='http://www.uzai.com/' target='_blank' rel='nofollow'>悠哉旅游网</a> <a href='http://lady.poco.cn/' target='_blank' rel='nofollow'>POCO女性</a> <a href='http://www.tianqi.com/' target='_blank' rel='nofollow'>天气预报</a> <a href='http://www.leho.com/' target='_blank' rel='nofollow'>爱乐活</a><a href='http://www.yilebuy.com/' target='_blank'>一乐购物网</a><a href='http://www.topit.me/' target='_blank' rel='nofollow'>优美网</a><a href='http://ai.taobao.com/' target='_blank' rel='nofollow'>爱淘宝网</a></li>");
+                            </script>
+
+                        </ul>
+                    </marquee>
+                    <p class="link_more"><a href="/about.html?link=links" target="_blank">更多&gt;&gt;</a></p>
+                </div>
+                <div class="record">
+                    <div class="record_l"> Copyright-2016
+                        <a href="#" target="_self">达令说女性购物分享网</a>@dalingshuo.com &nbsp;&nbsp;
+                        <a href="#" target="_blank">达令特卖网</a>&nbsp;&nbsp;蜀ICP备14002156号&nbsp;</br>
+                        客服邮箱：kefu@dalingshuo.com&nbsp; 文明办网文明上网举报电话：010-82615762 &nbsp;
+                        <a href="#" target="_blank">违法不良信息举报中心</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="share">
+        <p>分享到</p>
+        <div class="share_ej">
+            <div class="ej_one">
+                <a href="#">分享到...</a>
+                <span id="gbfx" style="cursor: pointer;">X</span>
+            </div>
+            <div class="ej_two">
+                <div class="two_up">
+                    <span class="up_one">
+                        <img src="img/weixin.gif" alt="">
+                        <p>微信</p>
+                    </span>
+                    <span class="up_one">
+                        <img src="img/sinaminiblog.gif" alt="">
+                        <p>新浪微博</p>
+
+                    </span>
+                    <span class="up_one">
+                        <img src="img/qzone.gif" alt="">
+                        <p>QQ空间</p>
+
+                    </span>
+                </div>
+                <div class="two_down">
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                </div>
+            </div>
+            <div class="ej_one">
+                <a href="#">更多平台...（133）</a>
+                <span><a href="#"><i>b</i>share</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/jquery.cookie.min.js"></script>
+    <script src="../js/registor.min.js"></script>
+    <script>
+        $('#gbfx').click(function(){
+            $(this).parent().parent().parent().hide();
+        })
+    </script>
+</body>
+
+</html>

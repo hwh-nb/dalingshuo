@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../css/cart.min.css">
+    <style>
+        .goodInfo {
+            margin-top: 20px;
+			border: 1px solid black;
+			height: 50px;
+			}
+            .goodInfo li {
+				float: left;
+				width: 191px;
+				height: 50px;
+				float: left;
+				font: 24px/50px "";
+				text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+			}
+            #spmz{
+                font-size: 12px;
+            }
+            .goodInfo li input {
+				width: 30px;
+				text-align: center;
+			}
+			
+			.goodInfo li.num a {
+				display: inline-block;
+				width: 10px;
+				height: 20px;
+				font: 12px/20px "";
+				background: #ddd;
+				text-decoration: none;
+			}
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header">
+            <p>达令,欢迎您！</p>
+            <div class="header-right">
+                <a href="">微博登陆&nbsp;</a>
+                <em class="tb"></em>
+                <li>|</li>
+                <a href="">QQ登陆&nbsp;</a>
+                <em class="tb tb1"></em>
+                <li>|</li>
+                <a href="">登陆</a>
+                <li>|</li>
+                <a href="">注册</a>
+                <li>|</li>
+                <a href="">我的订单</a>
+                <li>|</li>
+                <a href="">手机达令</a>
+                <li>|</li>
+                <a href="">达令音乐</a>
+                <li>|</li>
+                <a href="">加入收藏</a>
+            </div>
+        </div>
+    </header>
+    <!-- er -->
+    <div class="er">
+        <div class="logo">
+            <a href="#"><img src="../img/logo.png" alt="logo"></a>
+            <div class="mod_ad">
+                <p>本周<b>爱淘宝</b>推荐</p>
+                <a href="#">天猫超人气女装旗舰店——韩都衣舍</a>
+            </div>
+            <div class="ss">
+                <div class="ssk">
+                    <form name="search" action="#" target="_blank">
+                        <input class="mod_search_srk" type="text" placeholder="请输入商品进行搜索" value='连衣裙'>
+                        <input class="mod_search_btn" type="submit" value="搜索">
+                    </form>
+                </div>
+                <div class="mod_cart">
+                    <div class="mod_cart_con">
+                        <a href="#" target="_blank" class="mod_cart_lk">
+                            <i class="mod_cart_ico">&nbsp;</i>
+                            <span class="mod_cart_tit">购物车</span>
+                        </a>
+                        <div class="mod_cart_line">|</div>
+                        <span class="mod_cart_num" id="cart_total">0</span>
+                        <b class="mod_cart_arrow"><i></i></b>
+                    </div>
+                </div>
+                <div class="mod_lxie">
+                    <a href="#" target="_blank">凉鞋</a>
+                    <a href="#" target="_blank">T恤</a>
+                    <a href="#" target="_blank">女包</a>
+                    <a href="#" target="_blank">衬衫</a>
+                    <a href="#" target="_blank">爆款</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="nav">
+        <div class="dl_index">
+            <ul>
+                <li class="flei"><a href="/" target="_self">首页</a></li>
+                <li class="flei tbfl"><a href="#">淘宝返利</a></li>
+                <li class="flei"><a href="#">热卖</a></li>
+                <li class="flei"><a href="#">女装</a></li>
+                <li class="flei"><a href="#">女鞋</a></li>
+                <li class="flei"><a href="#">女包</a></li>
+                <li class="flei"><a href="#">配饰</a></li>
+                <li class="flei"><a href="#">美妆</a></li>
+                <li class="flei"><a href="#">当季上新</a></li>
+                <li class="flei"><a href="#">旗舰店</a></li>
+                <li class="flei"><a href="#">达令周刊</a></li>
+                <li class="flei"><a href="#">夏季连衣裙</a></li>
+                <li class="flei"><a href="#">达令特卖</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- section -->
+    <section class="cart">
+        <div class="cart_tit">
+            <h1>商品预算</h1>
+            <div class="cart_logo"></div>
+        </div>
+        <div class="cart_con">
+            <div class="cart_ccon">
+                <p>您的购物车还是空的，赶紧去挑选商品吧！</p>
+                <p>
+                    <a href="../index.html">返回主页</a>
+                </p>
+            </div>
+            <div class="cartList"></div>
+        </div>
+    </section>
+    <!-- tb -->
+    <div class="tb">
+        <a href="#" class="tb_tb"></a>
+        <div class="bar">
+            <div class="tb_tu">
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+                <div class="tb_tu_small">
+                    <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                    <span class="zzc">
+                        <span>￥</span>
+                        <span>199</span>
+                    </span>
+                </div>
+            </div>
+            <div class="zhzhzh">
+                <img src="../img/TB1NxnAKXXXXXcNXVXXRBft6FXX-230-230.jpg_110x90.jpg" alt="">
+                <span class="zzc">
+                    <span>￥</span>
+                    <span>199</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="kdiv"></div>
+    <!-- foot -->
+    <div class="foot">
+        <div class="barr">
+            <div class="leftbox">
+                <a href="#" class="first">
+                    <img src="../img/t0142f97862f5072b0d.jpg" alt="bar">
+                    <p>知识分享</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t014a9b0008c0340ecc.jpg" alt="bar">
+                    <p>买东西</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t01c2faf6fe1c831edd.jpg" alt="bar">
+                    <p>购物网站大全</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t01dbc0bfc7567b498e.jpg" alt="bar">
+                    <p>文档共享</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t0174c7ccd8a54e4fdc.jpg" alt="bar">
+                    <p>苹果官方中文</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t0106580a500f1b2cc1.jpg" alt="bar">
+                    <p>宜人贷网</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t019db4b2f4999ac33c.jpg" alt="bar">
+                    <p>企业官网</p>
+                </a>
+                <a href="#">
+                    <img src="../img/t0104bf9319c0f6862c.png" alt="bar">
+                    <p>奈雪的茶加盟</p>
+                </a>
+            </div>
+        </div>
+        <div class="second">
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="金玉良缘女主 唐嫣四套主角妆不重样" _hover-ignore="1">&nbsp;&gt;&nbsp;金玉良缘女主
+                        唐嫣四套主角妆不重样</a>
+                    <span>
+                        <i>14</i>人喜欢
+                    </span>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="法国侈品牌路易·威登">&nbsp;&gt;&nbsp;法国侈品牌路易·威登</a>
+                    <span>
+                        <i>11</i>人喜欢
+                    </span>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="达令推荐：走路带风炫酷潇洒大衣"
+                        _hover-ignore="1">&nbsp;&gt;&nbsp;达令推荐：走路带风炫酷潇洒大衣</a>
+                    <span>
+                        <i>9</i>人喜欢
+                    </span>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="达令说时尚春天 鱼嘴鞋风情" _hover-ignore="1">&nbsp;&gt;&nbsp;达令说时尚春天
+                        鱼嘴鞋风情</a>
+                    <span>
+                        <i>7</i>人喜欢
+                    </span>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="夏日短裤百搭背心 穿出最抢眼小清新" _hover-ignore="1">&nbsp;&gt;&nbsp;夏日短裤百搭背心
+                        穿出最抢眼小清新</a>
+                    <span>
+                        <i>8</i>人喜欢
+                    </span>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="光子嫩肤的效果好不好">&nbsp;&gt;&nbsp;光子嫩肤的效果好不好</a>
+                    <span>
+                        <i>6</i>人喜欢
+                    </span>
+                </li>
+            </ul>
+            <div class="second_font">
+                <a href="#" class="tags_1" target="_blank">正品口红持久保湿不脱</a>
+                <a href="#" class="tags_2" target="_blank">2016春秋装学生松</a>
+                <a href="#" class="tags_1" target="_blank">手拿包</a>
+                <a href="#" class="tags_3" target="_blank">迷你包</a>
+                <a href="#" class="tags_3" target="_blank">邮差包</a>
+                <a href="#" class="tags_5" target="_blank">手提包</a>
+                <a href="#" class="tags_6" target="_blank">机车包</a>
+                <a href="#" class="tags_2" target="_blank">旅行包</a>
+                <a href="#" class="tags_2" target="_blank">磨砂皮</a>
+                <a href="#" class="tags_3" target="_blank">帆布</a>
+                <a href="#" class="tags_7" target="_blank">真皮</a>
+                <a href="#" class="tags_6" target="_blank">PU皮</a>
+                <a href="#" class="tags_3" target="_blank">漆皮</a>
+                <a href="#" class="tags_8" target="_blank">毛绒系</a>
+            </div>
+        </div>
+    </div>
+    <!-- tureFoot -->
+    <div class="sss">
+        <div class="tureFoot">
+            <div class="foot_con">
+                <div class="f_list">
+                    <h4>发现美丽</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">挑衣服</a></li>
+                        <li><a href="#" target="_blank">找鞋子</a></li>
+                        <li><a href="#" target="_blank">寻包包</a></li>
+                        <li><a href="#" target="_blank">搭配饰</a></li>
+                        <li><a href="#" target="_blank">化美妆</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">关于达令说</a></li>
+                        <li><a href="#" target="_blank">联系我们</a></li>
+                        <li><a href="#" target="_blank">网站地图</a></li>
+                        <li><a href="#" target="_blank">音乐电台</a></li>
+                        <li><a href="#" target="_blank">达令周刊</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>更多</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">友情链接</a></li>
+                        <li><a href="#" target="_blank">意见反馈</a></li>
+                        <li><a href="#" rel="nofollow" target="_blank">中国天气</a></li>
+                        <li><a href="#" target="_blank">手机达令</a></li>
+                        <li><a href="#" target="_blank">WAP达令</a></li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <h4>关注我们</h4>
+                    <ul class="l_two">
+                        <li><a href="#" target="_blank">达令说的新浪微博</a></li>
+                        <li><a href="#" target="_blank">达令说的QQ空间</a></li>
+                        <li><a href="#" target="_blank" rel="nofollow">爱淘宝网</a></li>
+                        <li>
+                            <a target="_blank" href="#">
+                                <img border="0" src="http://wpa.qq.com/pa?p=2:775164242:51" alt="点击这里给我发消息"
+                                    title="点击这里给我发消息" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f_list">
+                    <img src="../img/dalingshuo.png" width="100" height="100" alt="二维码，达令说" />
+                    <p>&nbsp;&nbsp;达令说的二维码</p>
+                </div>
+                <div class="rolling">
+                    <h4 class="f_links">友情链接：</h4>
+                    <marquee align="middle" behavior="scroll" direction="up" height="50px" width="700px"
+                        scrollamount="1" scrolldelay="100" onmouseover="stop()" onmouseout="start()">
+                        <ul>
+
+                            <script type='text/javascript'>
+                                document.write("<li><a href='http://lady.qq.com/' target='_blank' rel='nofollow'>腾讯女性</a> <a href='http://www.tmall.com/' target='_blank' rel='nofollow'>天猫</a><a href='http://www.taobao.com/' target='_blank' rel='nofollow'>淘宝</a> <a href='http://ju.taobao.com/' target='_blank' rel='nofollow'>聚划算</a><a href='http://www.pclady.com.cn/' target='_blank' rel='nofollow'>太平洋女性网</a> <a href='http://www.duobaohui.com/' target='_blank' rel='nofollow'>多宝汇</a> <a href='http://www.7y7.com/' target='_blank' rel='nofollow'>七丽女性网</a> <a href='http://www.kuwo.cn/' target='_blank' rel='nofollow'>酷我音乐</a>  <a href='http://www.kongjie.com/' target='_blank' rel='nofollow'>空姐网</a> <a href='http://china.makepolo.com/' target='_blank' rel='nofollow'>马可波罗</a></li><li> <a href='http://www.aibang.com/' target='_blank' rel='nofollow'>爱帮网</a> <a href='http://club.china.alibaba.com/' target='_blank' rel='nofollow'>商人论坛</a> <a href='http://www.51hejia.com/' target='_blank' rel='nofollow'>和家网</a> <a href='http://www.zhubajie.com/' target='_blank' rel='nofollow'>猪八戒网</a> <a href='http://www.letao.com/' target='_blank' rel='nofollow'>乐淘网</a> <a href='http://quan.163.com/' target='_blank' rel='nofollow'>优惠券</a> <a href='http://www.appchina.com/' target='_blank' rel='nofollow'>应用汇</a> <a href='huodong/meizhuang.html' target='_blank' rel='nofollow'>爱美赏</a ></li><li> <a href='http://www.uzai.com/' target='_blank' rel='nofollow'>悠哉旅游网</a> <a href='http://lady.poco.cn/' target='_blank' rel='nofollow'>POCO女性</a> <a href='http://www.tianqi.com/' target='_blank' rel='nofollow'>天气预报</a> <a href='http://www.leho.com/' target='_blank' rel='nofollow'>爱乐活</a><a href='http://www.yilebuy.com/' target='_blank'>一乐购物网</a><a href='http://www.topit.me/' target='_blank' rel='nofollow'>优美网</a><a href='http://ai.taobao.com/' target='_blank' rel='nofollow'>爱淘宝网</a></li>");
+                            </script>
+
+                        </ul>
+                    </marquee>
+                    <p class="link_more"><a href="/about.html?link=links" target="_blank">更多&gt;&gt;</a></p>
+                </div>
+                <div class="record">
+                    <div class="record_l"> Copyright-2016
+                        <a href="#" target="_self">达令说女性购物分享网</a>@dalingshuo.com &nbsp;&nbsp;
+                        <a href="#" target="_blank">达令特卖网</a>&nbsp;&nbsp;蜀ICP备14002156号&nbsp;</br>
+                        客服邮箱：kefu@dalingshuo.com&nbsp; 文明办网文明上网举报电话：010-82615762 &nbsp;
+                        <a href="#" target="_blank">违法不良信息举报中心</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#" title="返回顶部" id="scrollup" style="display: none;"></a>
+            </li>
+            <li>
+                <a href="https://music.163.com/" class="music"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="share">
+        <p>分享到</p>
+        <div class="share_ej">
+            <div class="ej_one">
+                <a href="#">分享到...</a>
+                <span id="gbfx" style="cursor: pointer;">X</span>
+            </div>
+            <div class="ej_two">
+                <div class="two_up">
+                    <span class="up_one">
+                        <img src="img/weixin.gif" alt="">
+                        <p>微信</p>
+                    </span>
+                    <span class="up_one">
+                        <img src="img/sinaminiblog.gif" alt="">
+                        <p>新浪微博</p>
+
+                    </span>
+                    <span class="up_one">
+                        <img src="img/qzone.gif" alt="">
+                        <p>QQ空间</p>
+
+                    </span>
+                </div>
+                <div class="two_down">
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                    <div class="down_box"><a href="#">QQ好友</a></div>
+                </div>
+            </div>
+            <div class="ej_one">
+                <a href="#">更多平台...（133）</a>
+                <span><a href="#"><i>b</i>share</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.min.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+	<script src="../js/jquery.cookie.min.js"></script>
+	<script>
+      
+        $(document).ready(function(){
+            //将字符串转为对象
+            function convertStrToObj(str){
+                if(!str){
+                    return {};
+                }
+                return JSON.parse(str);
+            }
+            //获取cookie
+            let cookie_str = $.cookie('carts') ? $.cookie('carts') : '';
+            //转对象
+            let cookie_obj = convertStrToObj(cookie_str);
+            //遍历对象
+            for(let key in cookie_obj){
+                //取出每一个商品信息
+                let good = cookie_obj[key];
+                console.log(good);
+                $('#cart_total').text(`${good.num}`);
+                $('.cart_ccon').remove();
+                $('.cartList').append(`
+                <ul class="goodInfo" data-good-id="${key}">
+                    
+                    <li id="spmz">${good.name}</li>
+                    <li>${good.price}</li>
+                    <li class="num">
+                        <a href="javascript:;" class="minus">-</a>
+                        <input type="text" name="" id="" value="${good.num}" />
+                        <a href="javascript:;" class="plus">+</a>
+                    </li>
+                    <li class="total">${(good.price * good.num).toFixed(2)}</li>
+                    <li><a href="javascript:;" class="del">删除</a></li>
+                </ul>
+                `)
+            }
+
+            //-
+            let $minus = $('.minus');
+            $minus.each(function(){
+                $(this).click(function(){
+                    //获取id
+                    let id = $(this).parents('.goodInfo').attr('data-good-id');
+                    //获取cookie
+                    let cookie_str = $.cookie('carts') ? $.cookie('carts') : '';
+                    //转对象
+                    let cookie_obj = convertStrToObj(cookie_str);
+                    //改变数量
+                    if(cookie_obj[id].num > 0){
+                        cookie_obj[id].num --;
+                    }
+                    //存入cookie
+                    $.cookie('carts',JSON.stringify(cookie_obj),{expires : 2,path : '/'});
+                    //页面中的数量
+                    $(this).next().val(cookie_obj[id].num);
+                    //页面中的合计
+                    $(this).parent().next().text(cookie_obj[id].price * cookie_obj[id].num);
+                })
+            })
+
+            // //+
+            let $plus = $('.plus');
+            $plus.each(function(){
+                $(this).click(function(){
+                    //获取id
+                    let id = $(this).parents('.goodInfo').attr('data-good-id');
+                    //获取cookie
+                    let cookie_str = $.cookie('carts') ? $.cookie('carts') : '';
+                    //转对象
+                    let cookie_obj = convertStrToObj(cookie_str);
+                    //改变数量
+                    
+                    cookie_obj[id].num ++;
+                    
+                    //存入cookie
+                    $.cookie('carts',JSON.stringify(cookie_obj),{expires : 2,path : '/'});
+                    //页面中的数量
+                    $(this).prev().val(cookie_obj[id].num);
+                    //页面中的合计
+                    $(this).parent().next().text(cookie_obj[id].price * cookie_obj[id].num);
+                })
+            })
+
+            //数量框 
+            let $inp = $('.num input');
+            $inp.each(function(){
+                $(this).blur(function(){
+                    //获取id
+                    let id = $(this).parents('.goodInfo').attr('data-good-id');
+                    //获取cookie
+                    let cookie_str = $.cookie('carts') ? $.cookie('carts') : '';
+                    //转对象
+                    let cookie_obj = convertStrToObj(cookie_str);
+                    //改变数量
+                    if(/^\d+$/.test($(this).val())){
+                        cookie_obj[id].num = $(this).val();
+                    }else{
+                        cookie_obj[id].num = 0;
+                    }
+                    //存入cookie
+                    $.cookie('carts',JSON.stringify(cookie_obj),{expires : 2,path : '/'});
+                    //页面中的数量
+                    $(this).val(cookie_obj[id].num);
+                    //页面中的合计
+                    $(this).parent().next().text(cookie_obj[id].price * cookie_obj[id].num);
+                })
+            })
+
+            // //删除
+            let $del = $('.del');
+            $del.each(function(){
+                $(this).click(function(){
+                    //获取id
+                    let id = $(this).parents('.goodInfo').attr('data-good-id');
+                    //获取cookie
+                    let cookie_str = $.cookie('carts') ? $.cookie('carts') : '';
+                    //转对象
+                    let cookie_obj = convertStrToObj(cookie_str);
+                    //删除cookie的数据
+                    delete cookie_obj[id];
+                    //存入cookie
+                    $.cookie('carts',JSON.stringify(cookie_obj),{expires : 2,path : '/'});
+                    //页面当前商品删除
+                    $(this).parents('.goodInfo').remove();
+                })
+            })
+        });
+        $('#gbfx').click(function(){
+            $(this).parent().parent().parent().hide();
+        })
+    </script>
+			
+	
+</body>
+</html>
